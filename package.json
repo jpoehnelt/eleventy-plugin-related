@@ -10,7 +10,7 @@
     "url": "https://github.com/jpoehnelt/eleventy-plugin-related.git"
   },
   "scripts": {
-    "build": "tsc --emitDeclarationOnly && esbuild src/index.ts --outfile=dist/index.js --sourcemap --platform=node --bundle",
+    "build": "tsc --emitDeclarationOnly && esbuild src/index.ts --outfile=dist/index.js --sourcemap --platform=node --bundle --format=cjs --external:related-documents",
     "docs": "typedoc src/index.ts",
     "format": "eslint . --fix",
     "lint": "eslint .",
