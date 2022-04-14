@@ -1,0 +1,7 @@
+---
+---
+<div style="display:flex; flex-direction: column;">
+  {% for story in stories %}
+    <a href="/stories/{{ story.id}}.html" style="margin-bottom: 1rem;">{{ story.title }}</a>
+  {% endfor %}
+</div>

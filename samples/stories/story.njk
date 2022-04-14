@@ -1,0 +1,26 @@
+---
+pagination:
+  data: 'stories'
+  size: 1
+  alias: story
+permalink: /stories/{{ story.id }}.html
+---
+<article>
+    <h3>{{ story.title }}</h3>
+    <a href="{{ story.link }}">{{ story.link }}</a>
+    <div>{{ story.text | safe }}</div>
+
+    <h3>Related</h3>
+    <ul>
+    {% for result in story | related(stories) %}
+      <li>{{ result.relative }}  <a href="/stories/{{ result.document.id }}.html">{{ result.document.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h3>Comments</h3>
+    <ul>
+      {% for comment in story.comments %}
+        <li>{{ comment.text | safe }}</a></li>
+      {% endfor %}
+    </ul>
+</article>
