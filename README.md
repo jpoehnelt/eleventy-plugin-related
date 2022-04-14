@@ -21,12 +21,12 @@ npm i eleventy-plugin-related
 
 ```js
 eleventyConfig.addFilter(
-    "related",
-    require("eleventy-plugin-related").related({
-      serializer: (doc) => [doc.title, doc.link ?? '', doc.text ?? ''],
-      weights: [10, 1, 3],
-    })
-  );
+  "related",
+  require("eleventy-plugin-related").related({
+    serializer: (doc) => [doc.title, doc.link ?? "", doc.text ?? ""],
+    weights: [10, 1, 3],
+  })
+);
 ```
 
 Usage in a NunJucks template would look similar to the following.
@@ -34,9 +34,9 @@ Usage in a NunJucks template would look similar to the following.
 ```html
 <h3>Related</h3>
 <ul>
-{% for result in story | related(stories) %}
+  {% for result in story | related(stories) %}
   <li>{{ result.relative }} - {{ result.document.title }}</li>
-{% endfor %}
+  {% endfor %}
 </ul>
 ```
 
