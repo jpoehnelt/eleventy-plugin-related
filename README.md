@@ -40,6 +40,4 @@ Usage in a NunJucks template would look similar to the following.
 </ul>
 ```
 
-See the [reference documentation](https://jpoehnelt.github.io/eleventy-plugin-related/).
-
-For more complex options, check out the package[related-documents](https://www.npmjs.com/package/related-documents), on which this package is based.
+For more complex options, check out the package [related-documents](https://www.npmjs.com/package/related-documents), on which this package is based.
