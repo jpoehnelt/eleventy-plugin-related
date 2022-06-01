@@ -1,6 +1,6 @@
 {
   "name": "eleventy-plugin-related",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Find related documents in eleventy.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
