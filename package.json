@@ -52,7 +52,7 @@
     "@types/jest": "^27.4.1",
     "@types/natural": "^5.1.1",
     "axios": "^0.26.1",
-    "esbuild": "^0.14.36",
+    "esbuild": "^0.15.6",
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^26.0.0",
